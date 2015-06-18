@@ -24,4 +24,4 @@
 > placeTogether a b = a # snugT <> b # snugB
 > hexGrid n = foldl placeTogether (hexRow n) (replicate (n - 1) $ hexRow n)
 >
-> main = mainWith (hexGrid 19 :: Diagram B R2)
+> main = mainWith (hexGrid 19 :: Diagram B)
